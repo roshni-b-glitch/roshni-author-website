@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf6f9;
+    color: #333;
+    text-align: center;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+.hero {
+    background-color: #f9e8f0;
+}
+
+.profile-img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tagline {
+    font-style: italic;
+    color: #555;
+}
+
+.about {
+    max-width: 800px;
+    margin: auto;
+}
+
+.books {
+    background-color: #f4f9ff;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e6a4b4;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #d7849b;
+}
+
+.contact {
+    background-color: #f9f9f9;
+}
+
+footer {
+    padding: 20px;
+    background: #eee;
+    font-size: 14px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
